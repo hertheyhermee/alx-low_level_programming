@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point 
- * Description: print alphabets in reverse
+ * main - Entry point
+ *
  * Return: 0 (success)
  */
 int main(void)
@@ -11,6 +11,6 @@ int main(void)
 
 	for (ch = 'z'; ch >= 'a'; ch--)
 		putchar(ch);
-	putchar('\n');
+		putchar('\n');
 	return (0);
 }
