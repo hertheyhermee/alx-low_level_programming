@@ -1,25 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * a program that prints Fizz-Buzz
+ * main - Fizz Buzz Test
+ * Description: print Fizz for multiples of 3
+ * and Buzz for multiples of 5
+ * and FizzBuzz for multiples of both
  * Return: 0 (success)
  */
-
 int main(void)
 {
-	int a;
+	int i;
 
-	for (a = 1; a <= 100; a++)
+	i = 1;
+	printf("%d", i);
+	for (i = 2; i <= 100; i++)
 	{
-		if (a % 3 == 0 && a % 5 == 0)
-			printf("FizzBuzz ");
-		else if (a % 3 == 0)
-			printf("Fizz ");
-		else if (a % 5 == 0)
-			printf("Buzz ");
+		printf(" ");
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			if (i % 3 == 0)
+				printf("Fizz");
+			if (i % 5 == 0)
+				printf("Buzz");
+		}
 		else
-			printf("%d ", a);
+		{
+			printf("%d", i);
+		}
 	}
 	printf("\n");
 	return (0);
