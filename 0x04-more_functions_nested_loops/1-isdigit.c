@@ -6,7 +6,6 @@
  * @c: character to be processed
  * Return: 1 if c is digitt else 0
  */
-
 int _isdigit(int c)
 {
 	if
