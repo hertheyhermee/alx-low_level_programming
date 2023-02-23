@@ -3,10 +3,11 @@
 /**
  * print_square - print a square followed by a new line
  * @size: size of square
+ *
  */
 void print_square(int size)
 {
-	int i;
+	int i, j;
 
 	if (size <= 0)
 	{
