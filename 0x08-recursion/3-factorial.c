@@ -7,12 +7,10 @@
  */
 int factorial(int n)
 {
-	int f = 0;
-	
 	if (n < 0)
 		return(-1);
 	else if (n == 0 || n == 1)
 		return(n);
 	else
-		return(n * factorial(n - 1);
+		return(n * factorial(n - 1));
 }
