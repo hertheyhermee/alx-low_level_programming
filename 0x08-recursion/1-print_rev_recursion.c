@@ -7,8 +7,9 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int i;
-	
-	for (i = '\0'; i >= 0; i--)
-		printf("%s", s[i]);
+	if (*s)
+	{
+		_pritn_rev_recursion(s + 1);
+		_putchar(*s);
+	}
 }
