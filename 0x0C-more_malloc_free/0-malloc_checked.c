@@ -2,9 +2,8 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - a function that returns a pointe
- * Returns NULL if str = NULL
- * On success, the _strdup function returns a pointer to the duplicated string.
+ * *malloc_checked - a function that allocates memory using malloc
+ * Returns pointer to the allocated memory
  * Returns NULL if insufficient memory was available
  */
 
@@ -14,7 +13,7 @@ void *malloc_checked(unsigned int b)
 
 	ptr = malloc(b);
 
-	if (ptr == NULL)
+	if (!ptr)
 	{
 		exit(98);
 	}
