@@ -17,10 +17,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL || letters == 0)
 		return (0);
-	fd = open(filename, O_RDDONLY);
+	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(sizeof(cha)*(letters));
+	buffer = malloc(sizeof(char) * (letters));
 	if (buffer == NULL)
 		return (0);
 	read_len = read(fd, buffer, letters);
