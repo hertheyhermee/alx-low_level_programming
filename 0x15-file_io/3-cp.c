@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 			exit(98);
 		}
 		write_length = write(file_to, buffer, read_length);
-		if (write_length != read_length || write_len == -1)
+		if (write_length != read_length || write_length == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
