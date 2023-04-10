@@ -7,25 +7,25 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int ui = 0, base_two = 1;
-	int len = 0;
+	unsigned int convert = 0, scratch_base = 1;
+	int length = 0;
 
 	if (!b)
 		return (0);
 
-	while (b[len])
-		len++;
+	while (b[length])
+		length++;
 
-	while (--len >= 0)
+	while (--length >= 0)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[length] != '0' && b[len] != '1')
 			return (0);
 
-		if (b[len] & 1)
-			ui += base_two;
+		if (b[length] & 1)
+			convert += scratch_base;
 
-		base_two *= 2;
+		scratch_base *= 2;
 	}
 
-	return (ui);
+	return (convert);
 }
