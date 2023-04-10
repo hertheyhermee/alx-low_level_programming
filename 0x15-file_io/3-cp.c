@@ -2,10 +2,10 @@
 #define BUFSIZE 1024
 
 /**
- * main - This program copies the content of a file to another file
- * @argc: Argument count parameter
- * @argv: argument vector parameter
- * Return: 0 when successful otherwise, an exit status
+ * main - a program that copies the content of a file to another file
+ * @argc: Argument c
+ * @argv: argument v
+ * Return: 0 (success) else, exit
  */
 int main(int argc, char *argv[])
 {
